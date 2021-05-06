@@ -1,18 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="149.469194">
-<testcase classname="SubAndPay Feature" name="User is on the Course Page and able toSubscription for a Course" time="45.782317">
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="139.28987">
+<testcase classname="SubAndPay Feature" name="User is on the Course Page and able toSubscription for a Course" time="43.439846">
 <system-out><![CDATA[Given User is on the Unacademy Course Page..................................passed
 When User clicks on a particular Course.....................................passed
 Then Get Subscription Tab is displayed and clicking on it duration of the course is also displayed.passed
 ]]></system-out>
 </testcase>
-<testcase classname="SubAndPay Feature" name="User now selects the Course Plan with Discount" time="40.42895">
+<testcase classname="SubAndPay Feature" name="User now selects the Course Plan with Discount" time="37.544523">
 <system-out><![CDATA[Given User is now on Course Duration Page...................................passed
 When User clicks on different Course Plan...................................passed
 And User Enters & Apply the Referral Code...................................passed
 Then User click to procees to payment.......................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="SubAndPay Feature" name="User Verifying Mobile Number and Different Payment Options" time="63.257927">
+<testcase classname="SubAndPay Feature" name="User Verifying Mobile Number and Different Payment Options" time="58.305501">
 <system-out><![CDATA[Given User is Redirected to Payment Page....................................passed
 When User Enters the Mobile Number 7979079958...............................passed
 And User clicks login button................................................passed

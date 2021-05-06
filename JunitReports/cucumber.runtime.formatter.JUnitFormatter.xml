@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="cucumber.runtime.formatter.JUnitFormatter" tests="3" started="3" failures="0" errors="0" ignored="0">
+  <testsuite name="cucumber.runtime.formatter.JUnitFormatter" time="130.205">
+    <testcase name="User is on the Course Page and able toSubscription for a Course" classname="SubAndPay Feature" time="28.91"/>
+    <testcase name="User now selects the Course Plan with Discount" classname="SubAndPay Feature" time="42.477"/>
+    <testcase name="User Verifying Mobile Number and Different Payment Options" classname="SubAndPay Feature" time="58.819"/>
+  </testsuite>
+</testrun>

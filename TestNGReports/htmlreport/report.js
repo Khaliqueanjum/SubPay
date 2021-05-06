@@ -33,21 +33,21 @@ formatter.match({
   "location": "SubPayUnacademy.user_is_on_the_Unacademy_Course_Page()"
 });
 formatter.result({
-  "duration": 14700172700,
+  "duration": 29791844800,
   "status": "passed"
 });
 formatter.match({
   "location": "SubPayUnacademy.user_clicks_on_a_particular_Course()"
 });
 formatter.result({
-  "duration": 1700182000,
+  "duration": 998579801,
   "status": "passed"
 });
 formatter.match({
   "location": "SubPayUnacademy.get_Subscription_Tab_is_displayed_and_clicking_on_it_duration_of_the_course_is_also_displayed()"
 });
 formatter.result({
-  "duration": 29381962600,
+  "duration": 12649421200,
   "status": "passed"
 });
 formatter.scenario({
@@ -82,28 +82,28 @@ formatter.match({
   "location": "SubPayUnacademy.user_is_now_on_Course_Duration_Page()"
 });
 formatter.result({
-  "duration": 10163850900,
+  "duration": 10078987301,
   "status": "passed"
 });
 formatter.match({
   "location": "SubPayUnacademy.user_clicks_on_different_Course_Plan()"
 });
 formatter.result({
-  "duration": 7529718300,
+  "duration": 7440081700,
   "status": "passed"
 });
 formatter.match({
   "location": "SubPayUnacademy.user_Enters_Apply_the_Referral_Code()"
 });
 formatter.result({
-  "duration": 13047974800,
+  "duration": 11226946900,
   "status": "passed"
 });
 formatter.match({
   "location": "SubPayUnacademy.user_click_to_procees_to_payment()"
 });
 formatter.result({
-  "duration": 9687405800,
+  "duration": 8798507300,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -212,7 +212,7 @@ formatter.match({
   "location": "SubPayUnacademy.user_is_Redirected_to_Payment_Page()"
 });
 formatter.result({
-  "duration": 15571557200,
+  "duration": 13664474300,
   "status": "passed"
 });
 formatter.match({
@@ -225,35 +225,35 @@ formatter.match({
   "location": "SubPayUnacademy.user_Enters_the_Mobile_Number(String)"
 });
 formatter.result({
-  "duration": 323176800,
+  "duration": 352500700,
   "status": "passed"
 });
 formatter.match({
   "location": "SubPayUnacademy.user_clicks_login_button()"
 });
 formatter.result({
-  "duration": 177230700,
+  "duration": 161993000,
   "status": "passed"
 });
 formatter.match({
   "location": "SubPayUnacademy.user_Verify_the_OTP()"
 });
 formatter.result({
-  "duration": 20198784400,
+  "duration": 20199702999,
   "status": "passed"
 });
 formatter.match({
   "location": "SubPayUnacademy.user_verify_the_Different_Payment_Options()"
 });
 formatter.result({
-  "duration": 22541004701,
+  "duration": 23697393300,
   "status": "passed"
 });
 formatter.match({
   "location": "SubPayUnacademy.close_the_Browser()"
 });
 formatter.result({
-  "duration": 4446173500,
+  "duration": 229436500,
   "status": "passed"
 });
 });
