@@ -14,12 +14,18 @@ When User clicks on different Course Plan
 And User Enters & Apply the Referral Code 
 Then User click to procees to payment
 
-		
-
-Scenario: User Verifying Mobile Number and Different Payment Options
+Scenario Outline: User Verifying Mobile Number and Different Payment Options
 Given User is Redirected to Payment Page
-When User Enters the Mobile Number
+When User Enters the Mobile Number <number>
 And User clicks login button
 And User Verify the OTP
 And User verify the Different Payment Options
 Then Close the Browser
+
+Examples:
+|	number	 |
+|7979079958|		
+
+
+
+

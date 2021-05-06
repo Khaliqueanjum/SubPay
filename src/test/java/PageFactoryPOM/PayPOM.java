@@ -39,9 +39,9 @@ public class PayPOM {
 		PageFactory.initElements(driver, this);
 	}
 	
-	public void EnterMobileNumber() 
+	public void EnterMobileNumber(String number) 
 	{
-		EnterMobile.sendKeys("7979079958");
+		EnterMobile.sendKeys(number);
 
 	}
 	

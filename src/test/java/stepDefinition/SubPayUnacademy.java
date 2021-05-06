@@ -52,7 +52,7 @@ public class SubPayUnacademy {
 		 
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		SubPOM objA = PageFactory.initElements(driver,SubPOM.class );
-		 objA.SelectCourse();
+	objA.SelectCourse();
 		 driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		 
 	 }
@@ -106,17 +106,18 @@ public class SubPayUnacademy {
 		
 		String code=sheet1.getRow(0).getCell(0).getStringCellValue();
 		
-	objA.Referral(code);
-	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-	  }
+		objA.Referral(code);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	 
+	}
 
 	@Test(priority=7)
 	@Then("^User click to procees to payment$")
 	public void user_click_to_procees_to_payment() throws Throwable {
 		SubPOM objA = PageFactory.initElements(driver,SubPOM.class );
 		objA.ProceedPay();
-	  Thread.sleep(8000);
-	  driver.close();
+		Thread.sleep(8000);
+		driver.close();
 	   }
 
 	@Test(priority=8)
@@ -132,14 +133,24 @@ public class SubPayUnacademy {
 	 }
 
 	 
+//	 @Test(priority=9)
+//	@When("^User Enters the Mobile Number$")
+//	public void user_Enters_the_Mobile_Number() throws Throwable {
+//		 PayPOM objB = PageFactory.initElements(driver,PayPOM.class );
+//		 objB.EnterMobileNumber();  
+//		 driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+//	   
+//	}
+	 
 	 @Test(priority=9)
-	@When("^User Enters the Mobile Number$")
-	public void user_Enters_the_Mobile_Number() throws Throwable {
+	 @When("^User Enters the Mobile Number (\\d+)$")
+	 public void user_Enters_the_Mobile_Number(String number) throws Throwable {
 		 PayPOM objB = PageFactory.initElements(driver,PayPOM.class );
-		   objB.EnterMobileNumber();  
-		   driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-	   
-	}
+		 objB.EnterMobileNumber(number);  
+		 driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	     
+	 }
+	 
 	
 
 	@Test(priority=10)
@@ -147,7 +158,7 @@ public class SubPayUnacademy {
 	 public void user_clicks_login_button() throws Throwable 
 	 {
 		PayPOM objB = PageFactory.initElements(driver,PayPOM.class );
-	   objB.Login();
+		objB.Login();
 	    
 	 }
 
@@ -168,7 +179,7 @@ public class SubPayUnacademy {
 	 @When("^User verify the Different Payment Options$")
 	 public void user_verify_the_Different_Payment_Options() throws Throwable 
 	 {
-		PayPOM objB = PageFactory.initElements(driver,PayPOM.class );
+		 PayPOM objB = PageFactory.initElements(driver,PayPOM.class );
 	     objB.PaymentOptions();
 	    
 	 }
@@ -178,7 +189,7 @@ public class SubPayUnacademy {
 	 @Then("^Close the Browser$")
  	public void close_the_Browser() throws Throwable 
 	 {
- 	    driver.close();
+ 	     driver.close();
  	}
 
 }
