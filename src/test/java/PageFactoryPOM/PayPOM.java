@@ -26,11 +26,15 @@ public class PayPOM {
 	@FindBy(xpath="//*[@id='__next']/div[1]/div/div[1]/div[2]/div/div[1]/div[3]")
 	WebElement PaymentOptionB;
 	
+	@FindBy
+	WebElement PaymentOptionCard;
+	
 	@FindBy(xpath="//*[@id='__next']/div[1]/div/div[1]/div[2]/div/div[1]/div[4]")
 	WebElement PaymentOptionC;
 	
 	@FindBy(xpath="//*[@id='__next']/div[1]/div/div[1]/div[2]/div/div[1]/div[5]")
 	WebElement PaymentOptionD;
+	
 	
 	/********Methods*******/
 	
@@ -58,13 +62,20 @@ public class PayPOM {
 	public void PaymentOptions() throws Throwable
 	{
 		PaymentOptionA.click();
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 		PaymentOptionB.click();
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 		PaymentOptionC.click();
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 		PaymentOptionD.click();
-		Thread.sleep(5000);
+		Thread.sleep(2000);
+		
 	}
 
+	public void PaymentMenu() throws Throwable
+	{
+		PaymentOptionC.click();
+		Thread.sleep(2000);
+		PaymentOptionB.click();
+	}
 }

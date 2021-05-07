@@ -1,24 +1,43 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="139.28987">
-<testcase classname="SubAndPay Feature" name="User is on the Course Page and able toSubscription for a Course" time="43.439846">
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="4" time="169.59355">
+<testcase classname="SubAndPay Feature" name="User is on the Course Page and able toSubscription for a Course" time="22.943202">
 <system-out><![CDATA[Given User is on the Unacademy Course Page..................................passed
 When User clicks on a particular Course.....................................passed
 Then Get Subscription Tab is displayed and clicking on it duration of the course is also displayed.passed
 ]]></system-out>
 </testcase>
-<testcase classname="SubAndPay Feature" name="User now selects the Course Plan with Discount" time="37.544523">
+<testcase classname="SubAndPay Feature" name="User now selects the Course Plan with Discount" time="33.039147">
 <system-out><![CDATA[Given User is now on Course Duration Page...................................passed
 When User clicks on different Course Plan...................................passed
 And User Enters & Apply the Referral Code...................................passed
 Then User click to procees to payment.......................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="SubAndPay Feature" name="User Verifying Mobile Number and Different Payment Options" time="58.305501">
+<testcase classname="SubAndPay Feature" name="User Verifying Mobile Number and Different Payment Options" time="60.520581">
 <system-out><![CDATA[Given User is Redirected to Payment Page....................................passed
 When User Enters the Mobile Number 7979079958...............................passed
 And User clicks login button................................................passed
 And User Verify the OTP.....................................................passed
 And User verify the Different Payment Options...............................passed
-Then Close the Browser......................................................passed
+Then User Select CARD as Payment and  Enters Acceptance Credentials.........passed
 ]]></system-out>
+</testcase>
+<testcase classname="SubAndPay Feature" name="User Verifying Mobile Number and Invalid CARD Details" time="53.09062">
+<failure message="java.lang.AssertionError: expected [16] but found [18]&#13;&#10;&#9;at org.testng.Assert.fail(Assert.java:96)&#13;&#10;&#9;at org.testng.Assert.failNotEquals(Assert.java:776)&#13;&#10;&#9;at org.testng.Assert.assertEqualsImpl(Assert.java:137)&#13;&#10;&#9;at org.testng.Assert.assertEquals(Assert.java:118)&#13;&#10;&#9;at org.testng.Assert.assertEquals(Assert.java:652)&#13;&#10;&#9;at org.testng.Assert.assertEquals(Assert.java:662)&#13;&#10;&#9;at stepDefinition.SubPayUnacademy.user_Select_CARD_as_Payment_and_Enters_Invalid_Credentials(SubPayUnacademy.java:296)&#13;&#10;&#9;at ✽.Then User Select CARD as Payment and  Enters Invalid Credentials(src/test/resources/Feature/SubPay.feature:37)&#13;&#10;"><![CDATA[Given User is in the Payment Page...........................................passed
+When User Inputs the Cellphone Number 7979079958............................passed
+And User clicks on the button Login.........................................passed
+And User Recieves the OTP and Verify........................................passed
+Then User Select CARD as Payment and  Enters Invalid Credentials............failed
+
+StackTrace:
+java.lang.AssertionError: expected [16] but found [18]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:652)
+	at org.testng.Assert.assertEquals(Assert.java:662)
+	at stepDefinition.SubPayUnacademy.user_Select_CARD_as_Payment_and_Enters_Invalid_Credentials(SubPayUnacademy.java:296)
+	at ✽.Then User Select CARD as Payment and  Enters Invalid Credentials(src/test/resources/Feature/SubPay.feature:37)
+]]></failure>
 </testcase>
 </testsuite>

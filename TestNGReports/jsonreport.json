@@ -12,7 +12,7 @@
         "steps": [
           {
             "result": {
-              "duration": 29791844800,
+              "duration": 10472810100,
               "status": "passed"
             },
             "line": 6,
@@ -24,7 +24,7 @@
           },
           {
             "result": {
-              "duration": 998579801,
+              "duration": 424298100,
               "status": "passed"
             },
             "line": 7,
@@ -36,7 +36,7 @@
           },
           {
             "result": {
-              "duration": 12649421200,
+              "duration": 12046093700,
               "status": "passed"
             },
             "line": 8,
@@ -58,7 +58,7 @@
         "steps": [
           {
             "result": {
-              "duration": 10078987301,
+              "duration": 9083538300,
               "status": "passed"
             },
             "line": 12,
@@ -70,7 +70,7 @@
           },
           {
             "result": {
-              "duration": 7440081700,
+              "duration": 7495869300,
               "status": "passed"
             },
             "line": 13,
@@ -82,7 +82,7 @@
           },
           {
             "result": {
-              "duration": 11226946900,
+              "duration": 8060942500,
               "status": "passed"
             },
             "line": 14,
@@ -94,7 +94,7 @@
           },
           {
             "result": {
-              "duration": 8798507300,
+              "duration": 8398797300,
               "status": "passed"
             },
             "line": 15,
@@ -107,7 +107,7 @@
         ]
       },
       {
-        "line": 27,
+        "line": 29,
         "name": "User Verifying Mobile Number and Different Payment Options",
         "description": "",
         "id": "subandpay-feature;user-verifying-mobile-number-and-different-payment-options;;2",
@@ -116,10 +116,10 @@
         "steps": [
           {
             "result": {
-              "duration": 13664474300,
+              "duration": 11534330500,
               "status": "passed"
             },
-            "line": 18,
+            "line": 19,
             "name": "User is Redirected to Payment Page",
             "match": {
               "location": "SubPayUnacademy.user_is_Redirected_to_Payment_Page()"
@@ -128,10 +128,10 @@
           },
           {
             "result": {
-              "duration": 352500700,
+              "duration": 200960000,
               "status": "passed"
             },
-            "line": 19,
+            "line": 20,
             "name": "User Enters the Mobile Number 7979079958",
             "match": {
               "arguments": [
@@ -149,10 +149,10 @@
           },
           {
             "result": {
-              "duration": 161993000,
+              "duration": 113361100,
               "status": "passed"
             },
-            "line": 20,
+            "line": 21,
             "name": "User clicks login button",
             "match": {
               "location": "SubPayUnacademy.user_clicks_login_button()"
@@ -161,10 +161,10 @@
           },
           {
             "result": {
-              "duration": 20199702999,
+              "duration": 35201886700,
               "status": "passed"
             },
-            "line": 21,
+            "line": 22,
             "name": "User Verify the OTP",
             "match": {
               "location": "SubPayUnacademy.user_Verify_the_OTP()"
@@ -173,10 +173,10 @@
           },
           {
             "result": {
-              "duration": 23697393300,
+              "duration": 10415844100,
               "status": "passed"
             },
-            "line": 22,
+            "line": 23,
             "name": "User verify the Different Payment Options",
             "match": {
               "location": "SubPayUnacademy.user_verify_the_Different_Payment_Options()"
@@ -185,15 +185,107 @@
           },
           {
             "result": {
-              "duration": 229436500,
+              "duration": 3054198400,
               "status": "passed"
             },
-            "line": 23,
-            "name": "Close the Browser",
+            "line": 24,
+            "name": "User Select CARD as Payment and  Enters Acceptance Credentials",
             "match": {
-              "location": "SubPayUnacademy.close_the_Browser()"
+              "location": "SubPayUnacademy.user_Select_CARD_as_Payment_and_Enters_Acceptance_Credentials()"
             },
             "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 17,
+            "name": "@paymentvalid"
+          }
+        ]
+      },
+      {
+        "line": 41,
+        "name": "User Verifying Mobile Number and Invalid CARD Details",
+        "description": "",
+        "id": "subandpay-feature;user-verifying-mobile-number-and-invalid-card-details;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 7807063900,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "User is in the Payment Page",
+            "match": {
+              "location": "SubPayUnacademy.user_is_in_the_Payment_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 184481700,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "User Inputs the Cellphone Number 7979079958",
+            "match": {
+              "arguments": [
+                {
+                  "val": "7979079958",
+                  "offset": 33
+                }
+              ],
+              "location": "SubPayUnacademy.user_Inputs_the_Cellphone_Number(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 155103000,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "User clicks on the button Login",
+            "match": {
+              "location": "SubPayUnacademy.user_clicks_on_the_button_Login()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 40156695900,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "User Recieves the OTP and Verify",
+            "match": {
+              "location": "SubPayUnacademy.user_Recieves_the_OTP_and_Verify()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4787275300,
+              "error_message": "java.lang.AssertionError: expected [16] but found [18]\r\n\tat org.testng.Assert.fail(Assert.java:96)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:776)\r\n\tat org.testng.Assert.assertEqualsImpl(Assert.java:137)\r\n\tat org.testng.Assert.assertEquals(Assert.java:118)\r\n\tat org.testng.Assert.assertEquals(Assert.java:652)\r\n\tat org.testng.Assert.assertEquals(Assert.java:662)\r\n\tat stepDefinition.SubPayUnacademy.user_Select_CARD_as_Payment_and_Enters_Invalid_Credentials(SubPayUnacademy.java:296)\r\n\tat ✽.Then User Select CARD as Payment and  Enters Invalid Credentials(src/test/resources/Feature/SubPay.feature:37)\r\n",
+              "status": "failed"
+            },
+            "line": 37,
+            "name": "User Select CARD as Payment and  Enters Invalid Credentials",
+            "match": {
+              "location": "SubPayUnacademy.user_Select_CARD_as_Payment_and_Enters_Invalid_Credentials()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 31,
+            "name": "@paymentinvalid"
           }
         ]
       }
